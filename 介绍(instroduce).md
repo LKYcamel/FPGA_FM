@@ -6,7 +6,7 @@
 
 结构框图
 
-![框图](C:\Users\jjk\Desktop\框图.png)
+![框图](E:\项目\FPGA解调FM\框图.png)
 
 此次FM的信号是载波1M，调制信号频率10K，频偏10K
 
@@ -16,7 +16,9 @@
 
 一些说明：FIR滤波器的采样频率是10M，截至频率是20K，40阶。本人使用的FPGA开发板是黑金的4010，因为资源不够的问题，导致了FIR滤波不完全，载波存在的现象。所以我在最后得到解调波形后又进行了一次fir滤波。如果自己手中板子资源足够，完全可以把fir阶数提高，可以不用在进行第二次的FIR滤波。FIR的采样频率10M比较高，可以考虑使用clc抽取降低采样频率得到更好的频率效果。
 
-仿真效果![QQ图片20221027193311](C:\Users\jjk\Desktop\QQ图片20221027193311.png)
+仿真效果
+
+![仿真波形](E:\项目\FPGA解调FM\仿真波形.png)
 
 第一个是FM波形 。
 
@@ -26,7 +28,7 @@
 
 实际效果：
 
-![IMG_5068](C:\Users\jjk\Desktop\IMG_5068.JPG)
+![实际效果](E:\项目\FPGA解调FM\实际效果.JPG)
 
 最后如果有什么意见，以及问题可以通过邮箱1977823861@qq.com联系我。谢谢
 
@@ -38,7 +40,7 @@
 
 Structural block diagram
 
-![框图](C:\Users\jjk\Desktop\框图.png)
+![框图](E:\项目\FPGA解调FM\框图.png)
 
 The signal of this FM is a carrier of 1M, a modulated signal frequency of 10K, and a frequency offset of 10K.
 
@@ -48,9 +50,9 @@ The principle is not introduced here in the online book, to talk about the gener
 
 Some notes: The sampling frequency of the FIR filter is 10M, and the ending frequency is 20K, 40th order. The FPGA development board I used is a black gold 4010, because of the problem of insufficient resources, resulting in incomplete FIR filtering and carrier phenomenon. So I did another FIR filter after I finally got the demodulated waveform. If you have enough board resources in your hands, you can completely increase the fir order and do not need to perform a second FIR filtering. The sampling frequency of FIR is relatively high at 10M, and you can consider using clc decimation to reduce the sampling frequency to obtain a better frequency effect.
 
-Simulation effect
+Simulation effect：
 
-![QQ图片20221027193311](C:\Users\jjk\Desktop\QQ图片20221027193311.png)
+![仿真波形](E:\项目\FPGA解调FM\仿真波形.png)
 
 The first is the FM waveform .
 
@@ -60,6 +62,6 @@ The third is the final waveform obtained after FIR filtering.
 
 Practical results：
 
-![IMG_5068](C:\Users\jjk\Desktop\IMG_5068.JPG)
+![实际效果](E:\项目\FPGA解调FM\实际效果.JPG)
 
 Finally, if you have any comments and questions, you can contact me by email 1977823861@qq.com. Thank you.
